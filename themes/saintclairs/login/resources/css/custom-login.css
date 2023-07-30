@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.login-pf {
+    background: none;
+}
+
+.login-pf body {
+    background: none;
+    background-size: cover;
+    height: 100%;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+}
+
+.login-pf-page {
+    overflow-x: hidden;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.img-col{
+    /* background: linear-gradient(217.64deg, rgba(255, 192, 203, 0.74) -5.84%, #FDA6BC 106.73%); */
+    /* background: url(../img/bg-only.png) no-repeat center center; */
+    background: url(../img/bg-login.png) no-repeat center center;
+    background-size: cover;
+}
+
+.bg-img {
+    /* background: url(../img/bg-login.png) no-repeat center center;
+    background-size: cover;
+    width: 104%;
+    height: 100%;
+    margin-left: -20px;
+    margin-right: -20px; */
+}
+
+div.kc-page-logo {
+    background-image: url(../img/SaintClairs-SVG-Logo-2.png);
+    background-repeat: no-repeat;
+    background-size: 80px;
+    height: 80px;
+    width: 80px;
+    margin: 0px auto;
+    margin-bottom: 22px;
+}
+
+.card-pf {
+    border-top: none;
+    padding: 1.25rem;
+    box-shadow: none;
+}
+
+h1#kc-page-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 31px;
+    text-align: left;
+}
+
+.pf-c-form__label {
+    color: #2C2D2E;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.pf-c-button.pf-m-primary {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17.61px;
+    background-color: rgba(254, 206, 214, 0.4);
+    border-radius: 20px;
+    padding: 7px 0;
+    color: rgba(0, 0, 0, 1);
+}
+
+.pf-c-alert__title {
+    font-family: 'Raleway', sans-serif;
+}
+
+#kc-info-wrapper {
+    background-color: #FFFFFF;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+.login-pf a {
+    color: rgba(253, 166, 188, 1);
+    font-size: 13px;
+    /* font-family: 'Raleway', sans-serif; */
+    font-weight: 400 !important;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(247, 151, 175, 1) !important;
+}
+
+a.kc-social-item {
+    color: #909499;
+}
+
+/* Login register button width */
+div#kc-form-buttons {
+    width: 50%;
+}
+
+.pf-c-form-control {
+    background: rgba(255, 192, 203, 0.39) !important;
+    border: 1px rgba(255, 192, 203, 0.39);
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.pf-c-button.pf-m-control {
+    background: #FFFFFF;
+    border: 1px solid rgba(255, 192, 203, 0.39);
+    border-radius: 6px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 14px;
+}
+
+.pf-c-form-control:not(textarea) {
+    height: 45px;
+}
+
+.pf-c-form-control:hover, .pf-c-form-control:focus {
+    border-bottom-color: rgba(255, 192, 203, 0.39) !important;
+}
+
+.pf-m-control:hover, .pf-m-control:focus {
+    border-bottom-color: rgba(255, 192, 203, 0.39) !important;
+}
+
+.pf-c-button.pf-m-control::after {
+    --pf-c-button--BorderColor: rgba(255, 192, 203, 0.39);
+    --pf-c-button--BorderWidth: 1px solid;
+}
+
+.control {
+    box-sizing: border-box;
+    clear: both;
+    font-size: 1rem;
+    position: relative;
+    text-align: inherit;
+}
+
+.control.has-icons-left input, .control.has-icons-left select {
+    padding-left: 2.5em;
+}
+
+.control.has-icons-left .icon.is-left {
+    left: 0;
+}
+
+.control.has-icons-left .icon, .control.has-icons-right .icon {
+    color: rgba(0, 0, 0, 1);
+    height: 2.5em;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 2.5em;
+    z-index: 4;
+}
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+.checkbox label, .radio label {
+    /* font-family: 'Raleway', sans-serif; */
+    font-size: 13px;
+}
+
+.kc-social-icon-text {
+    color: #8D9297;
+}
+
+.text-center-hr {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-center-hr::before, .text-center-hr::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #E1E3E6;
+}
+
+.text-center-hr::before {
+    margin-right: 10px;
+}
+
+.text-center-hr::after {
+    margin-left: 10px;
+}
+
+.bg-logo {
+    width: 144px;
+}
+
+.bg-header-text {
+    color: #040057;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -0.0024em;
+}
+
+.bg-sub-text {
+    color: #040057;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.6px;
+}
+
+.header-sub-text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.24px;
+    color: #000000;
+}
+
+@media (min-width: 768px) {
+    .center-body {
+        align-items: center;
+        display: flex;
+    }
+
+    .login-pf-page {
+        flex-grow: 1;
+        margin: 0 auto;
+    }
+
+    .login-pf .container {
+        padding-bottom: 0;
+        bottom: auto;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .login-pf .container {
+        padding: 40px 34px 30px 20px;
+    }
+  }
+
+@media (max-width: 480px) {
+    .login-pf .container {
+        padding: 10px 20px 30px 20px;
+    }
+}
