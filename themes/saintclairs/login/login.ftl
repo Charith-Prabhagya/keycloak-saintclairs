@@ -3,19 +3,20 @@
     <#if section = "header">
         ${msg("loginAccountTitle")}
     <#elseif section = "form">
+    <div class="help-text">${msg("loginAccountHelpText")}</div>
     <div id="kc-form">
       <div id="kc-form-wrapper">
         <#if realm.password>
             <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
                 <#if !usernameHidden??>
                     <div class="${properties.kcFormGroupClass!}">
-                        <label for="username" class="${properties.kcLabelClass!}"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
+                        <label hidden for="username" class="${properties.kcLabelClass!}"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
                         <div class="control has-icons-left">
                             <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" <#if !realm.loginWithEmailAllowed>placeholder="${msg("username")}"<#elseif !realm.registrationEmailAsUsername>placeholder="${msg("usernameOrEmail")}"<#else>placeholder="${msg("email")}"</#if> type="text" autofocus autocomplete="off"
                                aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
                                 />
                             <span class="icon is-small is-left">
-                                <i class="fa fa-user"></i>
+                                <i class="fa fa-user-circle-o"></i>
                             </span>
                         </div>
 
@@ -29,14 +30,14 @@
                 </#if>
 
                 <div class="${properties.kcFormGroupClass!}">
-                    <label for="password" class="${properties.kcLabelClass!}">${msg("password")}</label>
+                    <label hidden for="password" class="${properties.kcLabelClass!}">${msg("password")}</label>
 
                     <div class="control has-icons-left">
                         <input tabindex="2" id="password" class="${properties.kcInputClass!}" name="password" placeholder="${msg("password")}" type="password" autocomplete="off"
                             aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
                         />
                         <span class="icon is-small is-left">
-                            <i class="fa fa-lock"></i>
+                            <i class="fa fa-unlock-alt"></i>
                         </span>
                     </div>
 

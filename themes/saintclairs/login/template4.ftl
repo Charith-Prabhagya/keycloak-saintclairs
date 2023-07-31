@@ -154,8 +154,8 @@
         </div>
     </div>
 
-    <div class="col-sm-6 img-col center-body">
-        <div class="bg-img"></div>
+    <div class="col-sm-6 img-col-template-4 center-body">
+        <#--  <div class="bg-img"></div>  -->
     </div>
 </div>
 </body>
