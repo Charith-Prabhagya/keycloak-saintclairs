@@ -16,7 +16,7 @@
                                aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
                                 />
                             <span class="icon is-small is-left">
-                                <i class="fa fa-user-circle-o"></i>
+                                <i class="fa fa-lg fa-user-circle-o"></i>
                             </span>
                         </div>
 
@@ -37,7 +37,7 @@
                             aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
                         />
                         <span class="icon is-small is-left">
-                            <i class="fa fa-unlock-alt"></i>
+                            <i class="fa fa-lg fa-unlock-alt"></i>
                         </span>
                     </div>
 
@@ -84,7 +84,7 @@
         <#if realm.password && realm.registrationAllowed && !registrationDisabled??>
             <div id="kc-registration-container">
                 <div id="kc-registration">
-                    <span>${msg("noAccount")} <a tabindex="6"
+                    <span>${msg("noAccount")} <a tabindex="6" class="float-right"
                                                  href="${url.registrationUrl}">${msg("doRegister")}</a></span>
                 </div>
             </div>

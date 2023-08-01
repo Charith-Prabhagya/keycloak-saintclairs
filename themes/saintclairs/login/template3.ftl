@@ -38,7 +38,7 @@
 
 <body class="${properties.kcBodyClass!}">
 <div class="row h-100">
-    <div class="col-sm-6 center-body">
+    <div class="col-xl-6 center-body">
         <div class="${properties.kcLoginClass!}">
             <div id="kc-header" class="${properties.kcHeaderClass!}">
                 <div id="kc-header-wrapper"
@@ -154,8 +154,7 @@
         </div>
     </div>
 
-    <div class="col-sm-6 img-col-template-3 center-body">
-        <#--  <div class="bg-img"></div>  -->
+    <div class="col-xl-6 img-col-template-3 center-body">
     </div>
 </div>
 </body>

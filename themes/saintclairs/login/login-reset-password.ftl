@@ -13,7 +13,7 @@
                     <div class="control has-icons-left">
                         <input type="text" id="username" name="username" class="${properties.kcInputClass!}" autofocus <#if !realm.loginWithEmailAllowed>placeholder="${msg("username")}"<#elseif !realm.registrationEmailAsUsername>placeholder="${msg("usernameOrEmail")}"<#else>placeholder="${msg("email")}"</#if> value="${(auth.attemptedUsername!'')}" aria-invalid="<#if messagesPerField.existsError('username')>true</#if>"/>
                         <span class="icon is-small is-left">
-                            <i class="fa fa-user-circle-o"></i>
+                            <i class="fa fa-lg fa-user-circle-o"></i>
                         </span>
                         <#if messagesPerField.existsError('username')>
                             <span id="input-error-username" class="${properties.kcInputErrorMessageClass!}" aria-live="polite">
